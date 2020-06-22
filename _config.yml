@@ -22,18 +22,23 @@ authors:
     umit:
       name:           Umit
       site:           https://www.elaboraet.com
-      avatar:         /assets/images/avatar1.jpg
-      bio:            "Founder and editor of the Elaboraet writing project."
+      avatar:         /assets/images/umit.jpg
+      bio:            "Founder, Author, and Editor"
       email:          elaboraet@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
 
-    jane:
-      name:           WIP
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar2.jpg
-      bio:            "WIP"
-      email:          fakemail@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
+    sam:
+      name:           Sam
+      site:           https://www.elaboraet.com
+      avatar:         /assets/images/avatar1.jpg
+      bio:            "Contributing Author and Editor"
+      email:          elaboraet@gmail.com
+      
+    rohan:
+      name:           Rohan
+      site:           https://www.elaboraet.com
+      avatar:         /assets/images/avatar1.jpg
+      bio:            "Contributing Author and Editor"
+      email:          elaboraet@gmail.com
  
 # Defaults
 defaults:
