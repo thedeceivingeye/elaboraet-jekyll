@@ -3,10 +3,13 @@ description: >
   writing, books, and reference - in style.
 url: ""
 paginate:	4 # The number of posts to show per page on your homepage
-name: "Umit"
+name: "Elaboraet"
 markdown: kramdown
 permalink: none
 kramdown:
   parse_block_html: true
 plugins:
-  - jekyll-paginate
+    - jekyll-paginate
+  
+exclude:
+    - Templates/
