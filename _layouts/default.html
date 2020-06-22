@@ -1,24 +1,25 @@
----
-layout: compress
----
-
 <!DOCTYPE html>
-<html data-current="{{ page.section }}" lang="en">
+<html lang="en">
 
-  {% include head.html %}
+	<head>
+		{% include head.html %}
+	</head>
 
-  <body>
+	<body>
 
-    {% include header.html %}
+		{% include header.html %}
 
-    <main>
+		<div class="content">
+			{{ content }}
+		</div>
 
-      {{ content }}
+	</body>
 
-    </main>
-
-    {% include footer.html %}
-
-  </body>
+	{% if page.layout == 'default' %}
+		<footer>
+		  {% include footer.html %}
+		</footer>
+	{% endif %}
+	<p class="love">Made with <i class="fa fa-heart"></i> by <a href="https://alvaroduran.com">Álvaro</a></p>
 
 </html>

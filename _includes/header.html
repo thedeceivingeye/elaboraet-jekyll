@@ -1,11 +1,13 @@
-<header>
+<div class="head">
+  {% if page.title %}
+  <div id="masthead">
+    <h3><a href="{{ site.baseurl | prepend: site.url}}">{{ site.title }}</a></h3>
+  </div>
 
-  <h1>
-    <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-  </h1>
-
-  <nav>
-    {% include navigation.html navigation=site.data.navigation %}
-  </nav>
-
-</header>
+  {% else %}
+  <div id="masthead">
+    <h1>{{ site.title }}</h1>
+    <h6 style="text-align:center">{{ site.description }}</h6>
+  </div>
+  {% endif %}
+</div>
