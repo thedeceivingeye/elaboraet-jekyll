@@ -3287,6 +3287,7 @@ input[type="button"].btn-block {
 
 .navbar {
   position: relative;
+  font-family: Arial, Helvetica, sans-serif;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
