@@ -1,212 +1,185 @@
-# Type: Minimal and Clean Free Jekyll Theme
+# Immaculate
 
-<img alt="Type: Minimal and Clean Free Jekyll Theme" src="https://user-images.githubusercontent.com/626005/63093493-c3daa880-bf65-11e9-860e-da88047cce24.png">
+A beautiful, fast, AMP-compliant Jekyll theme based on Tufte CSS.
 
-- [Configurations](#configurations)
-- [Deployment](#deployment)
-- [Posts](#posts)
-- [Pages](#pages)
-- [Navigation](#navigation)
-- [Disqus Comments](#disqus-comments)
-- [Social Media Links](#social-media-links)
-- [Update favicon](#update-favicon)
+[Check it out here!](https://immaculate-siawyoung-com.cdn.ampproject.org/c/immaculate.siawyoung.com/)
 
-### Configurations
+[Google AMP](https://www.ampproject.org/)
 
-Type theme comes with different customizations in the `_config.yml` file:
+[Tufte CSS](https://github.com/edwardtufte/tufte-css)
 
-```sh
-title:       Type
-email:       ''
-description: ''
-baseurl:     '' # The subpath of your site, e.g. /blog
-url:         '' # The base hostname & protocol for your site
-twitter:     ''
-github:      ''
-instagram:   ''
-facebook:    ''
+Immaculate is really fast, thanks to Google AMP. When served over Google's CDN, you will see typical `DOMContentLoaded` times of well under 100ms (when using the leaner stylesheet, see below). The benefits are most obvious for slower connections. On the *Regular - 2G* throttling setting in Chrome, the demo page still manages a `DOMContentLoaded` of under 500ms.
 
-markdown:  kramdown
-permalink: pretty
-paginate:  60
+Immaculate includes tag support for some of the more commonly-used Tufte CSS layout options, including sidenotes, margin notes, and full-width figures. Other features, such as `newthought` or epigraphs, can be used by typing raw HTML in your Markdown files. I might add helper tags for these in the future.
 
-sass:
-  style: compressed
+**Caveat (need hep!)**: AMP HTML does not allow form elements, including checkboxes, which are used in Tufte CSS to toggle the display of sidenotes and margin notes at smaller widths. As such, I've modified Immaculate to disable this functionality at smaller widths for the time being. It's a big deal, and I'm looking for help on emulating this functionality without using checkboxes.
 
-gems:
-  - jekyll-paginate
-  - jekyll/tagging
+## Getting Started
 
-include:
-  - _pages
-
-exclude:
-  - vendor
-  - Gemfile
-  - Gemfile.lock
-
-# Tags
-tag_page_dir:         tag
-tag_page_layout:      tag_page
-tag_permalink_style:  pretty
-
-# Pages path
-defaults:
-  - scope:
-      path: '_pages'
-    values:
-      permalink: /:basename:output_ext
+```
+git clone git@github.com:siawyoung/immaculate.git
+cd immaculate
+bundle install
+bundle exec jekyll serve --baseurl ''
 ```
 
-### Deployment
+Modify the template files and `_config.yml` to your liking, and publish away!
 
-To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` to start the Jekyll server.
+## Helper Tags
 
-I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
+Immaculate comes with a few helper tags. The source code for these tags can be found in `_plugins/shortcodes.rb`.
 
-### Posts
+### Image
 
-To create a new post, you can create a new markdown file inside the `_posts` directory by following the [recommended file structure](https://jekyllrb.com/docs/posts/#creating-post-files).
-
-The following is a post file with different configurations you can add as an example:
-
-```sh
----
-layout: post
-title: Welcome to Jekyll!
-featured: true
-tags: [frontpage, jekyll, blog]
-image: '/images/welcome.jpg'
----
+```
+{% image <src> <width> <height> <option?> %}
 ```
 
-You can set the author, featured or not, tags, and the post image.
+The `image` tag allows you to insert AMP-compliant images into the post.
 
-The `featured` key is to mark the post as a featured post, this will add a simple star icon (*) to the postcard.
+`src` is the `src` attribute of the image tag.
 
-To keep things more organized, add post images to **/images/pages** directory, and add page images to **/images/pages** directory.
+`width` and `height` of the image must be specified, as per AMP specifications.
 
-To create a draft post, create the post file under the **_drafts** directory, and you can find more information at [Working with Drafts](http://jekyllrb.com/docs/drafts/).
+`option` - an optional argument which supports the following options:
 
-For tags, try to not add space between two words, for example, `Ruby on Rails`, could be something like (`ruby-on-rails`, `Ruby_on_Rails`, or `Ruby-on-Rails`).
+- `fw` - makes the image full width
+- `raw` - outputs the raw `amp-img` tag, can be used in conjunction with margin notes
 
-Note that tags are not working with GitHub Pages, that's because the used [jekyll-tagging
-](https://github.com/pattex/jekyll-tagging) plugin is not [whitelisted](https://pages.github.com/versions/) by GitHub.
+##### Example usage
 
-To make this work, I use [Netlify.com](https://www.netlify.com/) for deployment.
-
-### Pages
-
-To create a new page, just create a new markdown file inside the `_pages` directory.
-
-The following is the `about.md` file that you can find as an example included in the theme with the configurations you can set.
-
-```sh
----
-layout: page
-title: About
-image: '/images/pages/about.jpeg'
----
+```
+{% image https://image.com/image.jpg 1200 600 fw %}
 ```
 
-Things you can change are: `title` and `image` path.
+### Youtube
 
-
-### Navigation
-
-The navigation on the sidebar will automatically include all the links to the pages you have created.
-
-### Disqus Comments
-
-Open `_includes/disqus.html` file, and change the `aspirethemes-demos` value on line `12` with your [Disqus account shortname](https://help.disqus.com/customer/portal/articles/466208).
-
-```js
-s.src = '//aspirethemes-demo.disqus.com/embed.js';
+```
+{% youtube <id> <width> <height> <option?> %}
 ```
 
-So, if your Disqus shortname is `exampleone`, the final code above should be
+The `youtube` tag allows you to insert AMP-compliant embedded Youtube videos into the post.
 
-```js
-s.src = '//exampleone.disqus.com/embed.js';
+`id` is the Youtube viddeo ID.
+
+`width` and `height` of the video must be specified, as per AMP specifications.
+
+`option` - an optional argument which supports the following options:
+
+- `fw` - makes the video full width
+- `raw` - outputs the raw `amp-youtube` tag, can be used in conjunction with margin notes
+
+##### Example usage
+
+```
+{% youtube aj2h3h1sf 600 400 %}
 ```
 
-That's all you need to setup Disqus from the theme side. If you get any issue regarding that comments are unable to load. First, make sure you have [registered your website with Disqus (Step 1)](https://help.disqus.com/customer/portal/articles/466182-publisher-quick-start-guide)
+### Sidenote
 
-And also check [Disqus troubleshooting guide](https://help.disqus.com/customer/portal/articles/472007-i-m-receiving-the-message-%22we-were-unable-to-load-disqus-%22) if you still have issues.
+(See caveat above)
 
-### Social Media Links
-
-Social media links included in `_includes/footer.html` file.
-
-The theme is using [Evil Icons](http://evil-icons.io/), which contains very simple and clean icons. The following is a list of the social media icons to use:
-
-Twitter
-
-```html
-<span data-icon='ei-sc-twitter' data-size='s'></span>
+```
+{% sidenote <id> <body> %}
 ```
 
-Facebook
+The `sidenote` tag allows you insert sidenotes into the post.
 
-```html
-<span data-icon='ei-sc-facebook' data-size='s'></span>
+`id` is a unique identifier for the sidenote, and it can be anything - it will not show up visually.
+
+`body` is the body of the sidenote. It can also accommodate `span`-level HTML elements (`<b>`, `<em>`, `<i>`, no block-level elements).
+
+##### Example usage
+
+```
+This is a very long{% sidenote meh Yes, <i>very</i> long. %} sentence.
 ```
 
-Instagram
+### Margin Note
 
-```html
-<span data-icon='ei-sc-instagram' data-size='s'></span>
+(See caveat above)
+
+```
+{% marginnote <id> %}
+<body>
+{% endmarginnote %}
 ```
 
-Pinterest
+The `marginnote` tag block allows you to insert margin notes into the post.
 
-```html
-<span data-icon='ei-sc-pinterest' data-size='s'></span>
+`id` is a unique identifier for the margin note, and it can be anything - it will not show up visually.
+
+`body` is the body of the sidenote. It can also accommodate `span`-level HTML elements (`<b>`, `<em>`, `<i>`, no block-level elements).
+
+You can also use margin notes in conjunction with `image` and `youtube` tags by specifying the `raw` option.
+
+##### Example usage
+
+```
+{% marginnote yt %}
+{% youtube aj2h3h1sf 350 200 raw %}
+This is a <b>extremely</b> succinct example.
+{% endmarginnote %}
 ```
 
-Vimeo
+### Blockquote
 
-```html
-<span data-icon='ei-sc-vimeo' data-size='s'></span>
+```
+{% blockquote <footer> %}
+<body>
+{% endblockquote %}
 ```
 
-Google Plus
+Standard Markdown blockquotes are supported by Immaculate. Additionally, the `blockquote` tag block allows you to insert Tufte-styled blockquotes with footers.
 
-```html
-<span data-icon='ei-sc-google-plus' data-size='s'></span>
+##### Example usage
+
+```
+{% blockquote Friedrich Nietzsche, Thus Spoke Zarathustra %}
+
+But say, my brothers, what can the child do that even the lion could not do? Why must the preying lion still become a child? The child is innocence and forgetting, a new beginning, a game, a self-propelled wheel, a first movement, a sacred “Yes.” For the game of creation, my brothers, a sacred “Yes” is needed: the spirit now wills his own will, and he who had been lost to the world now conquers the world.
+
+{% endblockquote %}
 ```
 
-SoundCloud
+## Even faster performance
 
-```html
-<span data-icon='ei-sc-soundcloud' data-size='s'></span>
+By default, Immaculate will utilize Tufte CSS's default font stack, which uses `et-book`. The custom font files are about 160kb in total, which is somewhat of a strain. If performance is important, Immaculate also ships with a leaner version of Tufte CSS, which uses just [the Palatino stack instead](http://www.cssfontstack.com/Palatino). It has 99.29% Mac and 86.13% Windows distribution.
+
+You just need to change the following line in `_includes/styles.scss`:
+
+```
+@import 'tufte';
+// change to:
+@import 'lean_tufte';
 ```
 
-Tumblr
+Just from pure anecdotal experience, using the leaner stylesheet reduces typical `DOMContentLoaded` times from 300ms down to 50ms when served through Google's CDN. Personally, `et-book` just looks a lot better to me, so pick whatever floats your boat.
 
-```html
-<span data-icon='ei-sc-tumblr' data-size='s'></span>
+## Syntax highlighting
+
+Immaculate supports syntax highlighting, but the stylesheet is commented out by default to keep the page lean. Simply uncomment the following line in `_includes/styles.scss`:
+
+```css
+// @import 'syntax-highlighting';
 ```
 
-Youtube
+## FAQ
 
-```html
-<span data-icon='ei-sc-youtube' data-size='s'></span>
+*How can I use the sans-serif versin of Tufte CSS, which uses Gill Sans?*
+
+You can override the CSS style in `_includes/styles.scss` with the font stack of your choice:
+
+```
+body {
+  font-family: "Gill Sans"
+}
 ```
 
-### Update favicon
+## Credits
 
-You can find the current favicon (favicon.ico) inside the theme root directory, just replace it with your new favicon.
+Credits to [Amplify](https://github.com/ageitgey/amplify) for most of the AMP-related code.
 
+## License
 
-### Aspire Themes
-
-👉 Visit [**aspirethemes.com**](http://bit.ly/type-jekyll-github-link) for more Jekyll, Ghost, and WordPress themes.
-
-<img alt="Aspire Themes" src="https://user-images.githubusercontent.com/626005/63092640-afe17780-bf62-11e9-9ea9-546489bb282c.png">
-
----
-
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=8G8PKPEADPD42&source=url">
-  <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif">
-</a>
+MIT
