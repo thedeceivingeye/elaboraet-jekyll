@@ -10,13 +10,13 @@ a:hover {
 #masthead h1 {
   text-align: center;
   margin:.25em;
-  font-family: 'UnifrakturMaguntia', cursive;
+  font-family: 'Times New Roman', serif;
   font-size:80px
 }
 #masthead h3 {
   text-align: center;
   padding:.25em;
-  font-family: 'UnifrakturMaguntia', cursive;
+  font-family: 'Times New Roman', serif;
   font-size:25px;
   border-bottom: 1px dotted #ccc;
 }
