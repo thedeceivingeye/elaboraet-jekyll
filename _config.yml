@@ -22,21 +22,21 @@ authors:
     umit:
       name:           Umit
       site:           https://www.elaboraet.com
-      avatar:         /assets/images/umit.jpg
+      avatar:         assets/images/umit.jpg
       bio:            "Founder, Author, and Editor"
       email:          elaboraet@gmail.com
 
     sam:
       name:           Sam
       site:           https://www.elaboraet.com
-      avatar:         /assets/images/avatar1.jpg
+      avatar:         assets/images/avatar1.jpg
       bio:            "Contributing Author and Editor"
       email:          elaboraet@gmail.com
       
     rohan:
       name:           Rohan
       site:           https://www.elaboraet.com
-      avatar:         /assets/images/avatar1.jpg
+      avatar:         assets/images/avatar1.jpg
       bio:            "Contributing Author and Editor"
       email:          elaboraet@gmail.com
  
