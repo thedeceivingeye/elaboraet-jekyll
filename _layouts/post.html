@@ -8,9 +8,7 @@ layout: default
 
   <div class="post-meta">
     <time datetime="{{ page.date | date_to_long_string }}">{{ page.date | date_to_long_string }}</time>
-    {% if page.author %}
-        {% include author/{{page.author}}.html %}
-    {% endif %}
+    <p>{% if page.author %}by: {{page.author}}{% endif %}</p>
   </div>
 
   <section>
