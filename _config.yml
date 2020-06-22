@@ -62,7 +62,10 @@ collections:
 
 
 # Social media
-twitter: twitter
-github: github
-linkedin: linkedin
-facebook: facebook
+#twitter: twitter
+#github: github
+#linkedin: linkedin
+#facebook: facebook
+
+#timezone
+timezone: America/New_York
