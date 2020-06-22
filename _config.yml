@@ -2,7 +2,7 @@
 name: 'Elaboraet'
 description: 'writing, books, and reference'
 logo: 'assets/images/logo.png'
-favicon: 'assets/images/favicon.ico'
+favicon: 'favicon.png'
 baseurl: ''
 disqus: ''
 email: 'elaboraet@gmail.com'
