@@ -1,25 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 
-	<head>
-		{% include head.html %}
-	</head>
+{% include head.html %}
 
-	<body>
+<body>
 
-		{% include header.html %}
+  <div class='js-off-canvas-container c-off-canvas-container'>
+    {% include header.html %}
 
-		<div class="content">
-			{{ content }}
-		</div>
+    {{ content }}
 
-	</body>
+    {% include footer.html %}
+  </div>
 
-	{% if page.layout == 'default' %}
-		<footer>
-		  {% include footer.html %}
-		</footer>
-	{% endif %}
-	<p class="love">For theme and layout credits, visit the About page.</p>
+  <script src="{{ '/js/jquery-3.1.1.min.js' | prepend: site.baseurl }}"> </script>
+  <script src="{{ '/js/evil-icons.min.js' | prepend: site.baseurl }}">   </script>
+  <script src="{{ '/js/jquery.fitvids.js' | prepend: site.baseurl }}">   </script>
+  <script src="{{ '/js/app.js' | prepend: site.baseurl }}">              </script>
+</body>
 
 </html>
