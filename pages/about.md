@@ -6,9 +6,7 @@ meta_description: |
   output in the browser or in the generated file _site/about.html.
 permalink: /about
 section: about
-intro_paragraph: |
-  This is an example of a standard Jekyll page. You can edit it with Netlify
-  CMS, accessible at `/admin/index.html` or by editing `pages/about.md` in a text editor.
+  
 ---
 > “Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.”
 
