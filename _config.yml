@@ -51,6 +51,7 @@ exclude:
     - vendor/gems/
     - vendor/ruby/
     - Templates/
+    - Media/
    
 collections_dir: _collections
 
