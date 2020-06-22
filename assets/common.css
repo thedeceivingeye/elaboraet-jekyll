@@ -10,13 +10,13 @@ a:hover {
 #masthead h1 {
   text-align: center;
   margin:.25em;
-  font-family: 'Times New Roman', serif;
-  font-size:80px
+  font-family: "Times New Roman", Times, serif;
+  font-size:70px
 }
 #masthead h3 {
   text-align: center;
   padding:.25em;
-  font-family: 'Times New Roman', serif;
+  font-family: "Times New Roman", Times, serif;
   font-size:25px;
   border-bottom: 1px dotted #ccc;
 }
