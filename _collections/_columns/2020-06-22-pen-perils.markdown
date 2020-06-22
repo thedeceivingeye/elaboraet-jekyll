@@ -3,7 +3,7 @@ layout: post
 title:  Pen Perils
 description: In this brief informal article, I discuss why word processors and otherwise erasable writing instruments may not help us grow as concise, deeply-thinking writers.
 date:   2020-06-22 13:16:00
-image: Media/Images/pen.jpg
+image: /Media/Images/pen.jpg
 image_caption: Three fountain pens.
 ---
 If you know me, you know that I rarely outline or draft my writing beforehand. I (sort of) know how, but I never have, simply because I never saw the use. Why plan with such depth and detail when you can let yourself throw words on a page, then later remove the bad ones? But even if some authors have success with this sort of discovery writing, I’ve begun to realize how hard improvising a “discovery-written” piece can be when writing with, for example, pen and paper. As such, I’ve concluded that my pencils and computers have spoiled me by giving me the luxury of an eraser. And that luxury, since childhood, combined with either a bad elementary English education or a bad attention span, contributed to my worse “discovery writing” habit.
