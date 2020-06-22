@@ -3,7 +3,7 @@ layout: post
 title:  "Remembering Roger Scruton"
 author: umit
 categories: [ General Essays ]
-image: /assets/images/scruton-painting.jpg
+image: assets/images/scruton-painting.jpg
 ---
 
 >“For ordinary people, the materialist vision is rather seductive; they become obsessed by the vision of the human being as a merely physical object, a lump of flesh suspended between the two poles of pleasure and pain. And that reductive vision gives rise to all that is most repugnant in the culture that now agonizes us. Human beings are put on display as objects, deprived of their freedom and divested of their capacity for love, gift, sacrifice, and service. And many people spend their days gripped by images of this degradation, watching the physical destruction of fellow human beings in violent movies or their physical excitement in pornographic movies. These loveless images are tempting because they remove from the human condition all that is difficult and demanding, and all that makes life worthwhile—the love, commitment, sacrifice, and giving through which we cultivate our better natures and connect with the realm of sacred things. They are visions of hell and owe their charm to the ease with which we can embrace them, leaving all the difficulties of personal life behind.”
