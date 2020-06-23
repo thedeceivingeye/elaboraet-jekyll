@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Islamic Golden Age: a Precursor to Modern Europe"
+title:  "The Islamic Golden Age: a Precursor to the Modern West?"
 author: umit
 categories: [ Articles ]
 image: assets/images/goldenage.jpg
