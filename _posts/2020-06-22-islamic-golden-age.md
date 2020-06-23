@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Islamic Golden Age: a Precursor to the Modern West?"
+title:  "The Islamic Golden Age: The Reason For Europe's Intellectual Revival"
 author: umit
 categories: [ Articles ]
 image: assets/images/goldenage.jpg
