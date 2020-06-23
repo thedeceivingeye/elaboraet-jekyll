@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Islamic Golden Age: The Reason For Europe's Intellectual Revival"
+title:  "The Islamic Golden Age: a Precursor to Europe's Intellectual Tradition?"
 author: umit
 categories: [ Articles ]
 image: assets/images/goldenage.jpg
