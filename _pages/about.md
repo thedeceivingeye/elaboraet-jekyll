@@ -17,7 +17,7 @@ The Articles section contains fuller, comprehensively written, proof-read articl
 
 Welcome to Elaboraet, a work-in-progress website dedicated to writing.
 
-#### [Our Authors](authors-list.html)
+## [Our Authors](authors-list.html)
 
 # Technical Information
 Elaboraet uses the Jekyll Static Website software hosted on Netlify. It currently uses the *Mundana* theme made by ["wowthemesnet"](https://www.wowthemes.net).
