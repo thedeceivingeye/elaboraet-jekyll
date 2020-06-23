@@ -66,6 +66,7 @@ paginate: 10
 
 exclude:
     - Templates/
+    - Drafts/
 
 
 
