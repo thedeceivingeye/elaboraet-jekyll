@@ -24,7 +24,6 @@ authors:
       site:           https://www.elaboraet.com
       avatar:         assets/images/avatar3.jpg
       bio:            "Founder, Author, and Editor"
-      twitter:        ''
       email:          elaboraet@gmail.com
 
     sam:
@@ -49,8 +48,8 @@ defaults:
       path: "_posts"
     values:
       layout: post
-      author: sal
-      avatar: /assets/images/avatar1.jpg
+      author: umit
+      avatar: assets/images/avatar3.jpg
       
   # all pages
   - scope:
