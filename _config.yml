@@ -65,6 +65,9 @@ highlighter: rouge
 # Paginate
 paginate: 10
 
+exclude:
+    - Templates/
+
 
 
 # Exclude metadata and development time dependencies (like Grunt plugins)
