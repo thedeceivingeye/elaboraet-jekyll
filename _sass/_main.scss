@@ -12,8 +12,8 @@ body {
     text-rendering: optimizeLegibility;
 	line-height:1.5;
 	font-size: 1rem;
-	color: rgb(79, 59, 0);
-    background-color: rbg(242, 237, 223);
+	color: rgb(92, 47, 8);
+    background-color: rbg(255, 246, 235);
 }
 
 nav ul {
@@ -48,7 +48,7 @@ pre {
 }
 
 code,pre {
-	background: rgb(212, 207, 195);
+	background: rgb(237, 229, 218);
 }
 
 code {
@@ -162,6 +162,7 @@ main {
 	display:flex;
 	flex-wrap:wrap;
 	max-width:60rem;
+    background-color: rbg(255, 246, 235);
 	margin:2rem auto;
 	padding:1rem;
 }
