@@ -40,13 +40,3 @@ exclude: [ Gemfile, Gemfile.lock, tale.gemspec, Templates/ ]
 
 # Disqus (Set to your disqus id)
 disqus:         jekyll-tale
-
-jekyll-archives:
-  enabled: []
-  layout: archive
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    tag: '/tag/:name/'
-    category: '/category/:name/'
