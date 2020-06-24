@@ -42,7 +42,7 @@ exclude: [ Gemfile, Gemfile.lock, tale.gemspec, Templates/ ]
 disqus:         jekyll-tale
 
 jekyll-archives:
-  enabled: year
+  enabled: []
   layout: archive
   permalinks:
     year: '/:year/'
