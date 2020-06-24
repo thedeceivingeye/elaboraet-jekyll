@@ -3,7 +3,7 @@ layout: default
 title: "elaboraet"
 ---
 <div class="introduction">
-  <h1>hi.</h1>
+  <h1>welcome.</h1>
 
 <p>
   With three authors, Elaboraet aspires to collaboratively author essays and articles about education, philosophy, cultural criticism, and otherwise.
@@ -13,7 +13,22 @@ title: "elaboraet"
 <hr>
 
 <div class="toc">
-  <h2>sample texts</h2>
+
+<h2>articles</h2>
+{% for post in site.posts %}
+
+    {% capture day %}{{ post.date | date: '%m%d%Y' }}{% endcapture %}
+    {% capture nday %}{{ post.next.date | date: '%m%d%Y' }}{% endcapture %}
+
+    {% if day != nday %}
+        <h5 class="date">{{ post.date | date: "%A, %B %e, %Y" }}</h5>
+    {% endif %}
+    {{ post.content }}
+    <hr>
+
+{% endfor %}
+
+  
   <ul class="texts">
   {% for item in site.texts %}
 
