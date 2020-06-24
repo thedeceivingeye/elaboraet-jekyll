@@ -1,62 +1,63 @@
-# Built with Jekyll 3.6.0
-
-# Setup
-title:               elaboraet.
-tagline:             'writing, books, and reference.'
-description:         '[description]'
-url:                 'https://elaboraet.com'
-baseurl:             ''
-
-# About/contact
+site: Elaboraet
+url: https://elaboraet.com
+title: Elaboraet
+description: writing, books, and reference.
+#twitter:
+#  username: #yourusername
+#  card: summary
+#  creator: #yourusername
 author:
-  name:              Umit N
-  url:               https://elaboraet.com
-  email:             elaboraet@gmail.com
-
-# Color scheme. Options: red, orange, magenta, cyan, blue, brown
-color-scheme: brown
-
-# Permalinks
+  #twitter: #yourusername
+  name: Umit
+  avatar:
+  email: elaboraet@gmail.com
+  url: https://elaboraet.com
 permalink: pretty
-permalink: /:title/
 
-# Set encoding to UTF-8
-encoding: utf-8
+baseurl: ""
 
-# Collections for texts
-collections:
-  texts:
-    output: true
+highlighter: none
 
-# Markdown specs
-markdown: kramdown
-
-kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  footnote_backlink: "&#x21a9;&#xfe0e;"
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-# Exclusions from the final site
 exclude:
-  - optional
-  - vendor
-  - ed..gemspec
-  - Gemfile
-  - Gemfile.lock
-  - backstop_data
-  - backstop.json
+  - .jekyll-cache
+  - Templates/
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
 
-# Theme
-# (Used for local or custom-server deployments)
-# Uncomment the `theme` line if using the Ed. theme gem on your own computer or server.
-# See https://jekyllrb.com/docs/themes/
-# theme: "ed."
+sass:
+  sass_dir:          _sass
+  style:            :compressed
 
-# Remote Theme
-# (Used only for GitHub deployments)
-# See https://help.github.com/en/articles/adding-a-jekyll-theme-to-your-github-pages-site
-remote_theme: minicomp/ed
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap  
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

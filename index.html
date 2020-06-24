@@ -1,28 +1,12 @@
 ---
 layout: default
-title: "elaboraet"
 ---
-<div class="introduction">
-  <h1>welcome.</h1>
 
-<p>
-  With three authors, Elaboraet aspires to collaboratively author essays and articles about education, philosophy, cultural criticism, and otherwise.
-</p>
-</div>
+<section class="posts">
+<ul>
+{% for post in site.posts %}
+<li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m-%d-%Y" }}</time></li>
+{% endfor %}
+</ul>
+</section>
 
-<hr>
-
-<div class="toc">
-
-<h2>articles</h2>
-  <ul class="texts">
-  {% for item in site.texts %}
-
-    <li class="text-title">
-      <a href="{{ site.baseurl }}{{ item.url }}">
-        {{ text.date }} - {{ item.title }}
-      </a>
-    </li>
-  {% endfor %}
-  </ul>
-</div>

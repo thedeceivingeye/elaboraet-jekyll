@@ -1,4 +1,5 @@
 source "https://rubygems.org"
-gemspec
-
-gem "html-proofer"
+gem 'jekyll'
+gem 'jekyll-paginate'
+gem 'jekyll-seo-tag'
+gem 'jekyll-sitemap'
