@@ -14,5 +14,10 @@ Changing others and having impact requires that we first change what exists in o
 
 *Jalal ad-Din Muhammad Rumi.*
 
+## Our Authors
+- Umit - Founder and Co-Author
+- Sam - Co-Author and Contributor
+- Rohan - Co-Author and Contributor
+
 ## Technical Information
 Elaboraet uses the Jekyll Static Website software hosted on Netlify. It currently uses the *Tale* theme created by Chester How.
