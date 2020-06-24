@@ -1,12 +1,14 @@
 ---
 layout: post
 title: "About"
-author: "Chester"
+author: "Umit"
 permalink: /about/
 ---
 
 ## Our Vision
-Along with myself are two other friends - as a collective effort we aspire to write articles, essays, and reflections. But we don't just want to influence other people. We want to influence and improve ourselves.
+With me are two friends, and, as a joint effort, we aspire to write articles, essays, and reflections in regular cadence. We don't just write to influence other people and "get our names out there," but we write to improve ourselves and build our own skills. Having our writing published online compels us to write *as if* many read our work. The possibility of having even a single reader sparks that motivation to write well. 
+
+Changing others and having impact requires that we first change what exists in our own selves, as Rumi once expressed:
 
 > Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.
 
