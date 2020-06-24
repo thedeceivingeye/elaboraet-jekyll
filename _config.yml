@@ -1,74 +1,62 @@
-# Site
-name: 'Elaboraet'
-description: 'writing, books, and reference'
-logo: 'assets/images/logo.png'
-favicon: 'favicon.png'
-baseurl: ''
-disqus: ''
-email: 'elaboraet@gmail.com'
-mailchimp-list: ''
+# Built with Jekyll 3.6.0
 
-include: ["_pages"]
+# Setup
+title:               elaboraet.
+tagline:             'writing, books, and reference.'
+description:         '[description]'
+url:                 'https://elaboraet.com'
+baseurl:             ''
+
+# About/contact
+author:
+  name:              Umit N
+  url:               https://elaboraet.com
+  email:             elaboraet@gmail.com
+
+# Color scheme. Options: red, orange, magenta, cyan, blue, brown
+color-scheme: brown
+
+# Permalinks
+permalink: pretty
 permalink: /:title/
 
-# Plugins
-plugins: 
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-seo-tag
-  
-authors:
-    umit:
-      name:           Umit
-      site:           https://www.elaboraet.com
-      avatar:         assets/images/avatar3.jpg
-      bio:            "Founder, Author, and Editor"
-      email:          elaboraet@gmail.com
+# Set encoding to UTF-8
+encoding: utf-8
 
-    sam:
-      name:           Sam
-      site:           https://www.elaboraet.com
-      avatar:         assets/images/avatar1.jpg
-      bio:            "Contributing Author and Editor"
-      email:          elaboraet@gmail.com
-      
-    rohan:
-      name:           Rohan
-      site:           https://www.elaboraet.com
-      avatar:         assets/images/avatar2.jpg
-      bio:            "Contributing Author and Editor"
-      email:          elaboraet@gmail.com
- 
-# Defaults
-defaults:
+# Collections for texts
+collections:
+  texts:
+    output: true
 
-  # all posts
-  - scope:
-      path: "_posts"
-    values:
-      layout: post
-      author: umit
-      avatar: assets/images/avatar3.jpg
-      
-  # all pages
-  - scope:
-      path: "_pages"
-    values:
-      layout: page
-      
-# Syntax
+# Markdown specs
 markdown: kramdown
-highlighter: rouge
 
-# Paginate
-paginate: 10
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  footnote_backlink: "&#x21a9;&#xfe0e;"
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
 
+# Exclusions from the final site
 exclude:
-    - Templates/
-    - Drafts/
+  - optional
+  - vendor
+  - ed..gemspec
+  - Gemfile
+  - Gemfile.lock
+  - backstop_data
+  - backstop.json
 
+# Theme
+# (Used for local or custom-server deployments)
+# Uncomment the `theme` line if using the Ed. theme gem on your own computer or server.
+# See https://jekyllrb.com/docs/themes/
+# theme: "ed."
 
-
-# Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+# Remote Theme
+# (Used only for GitHub deployments)
+# See https://help.github.com/en/articles/adding-a-jekyll-theme-to-your-github-pages-site
+remote_theme: minicomp/ed
