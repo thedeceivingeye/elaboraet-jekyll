@@ -13,6 +13,7 @@ title: Search
 	    outline: none;
 	    padding: 1rem;
 		background: rgb(212, 191, 163);
+		color: darkbrown;
 	    width: 100%;
 		-webkit-appearance: none;
 		font-family: inherit;
