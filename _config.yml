@@ -1,41 +1,74 @@
-# Site settings
-title:          Elaboraet
-description:    "writing, books, and reference"
-baseurl:        ""
-url:            "https://elaboraet.com"
+# Site
+name: 'Elaboraet'
+description: 'writing, books, and reference'
+logo: 'assets/images/logo.png'
+favicon: 'favicon.png'
+baseurl: ''
+disqus: ''
+email: 'elaboraet@gmail.com'
+mailchimp-list: ''
 
-# Google Analytics
-#google_analytics: UA—XXXXXXXX-X
+include: ["_pages"]
+permalink: /:title/
 
-# Author
-author:
-  name:         Umit
-  url:          https://elaboraet.com
-  email:        elaboraet@gmail.com
-
-# Build settings
-markdown:       kramdown
-include:
-  - _pages
-
-# Assets
-sass:
-  sass_dir:     _sass
-  style:        compressed
-
-# Gems
-plugins:
+# Plugins
+plugins: 
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-paginate
   - jekyll-seo-tag
-  # - jemoji #Uncomment this to allow emoji in your post
+  
+authors:
+    umit:
+      name:           Umit
+      site:           https://www.elaboraet.com
+      avatar:         assets/images/avatar3.jpg
+      bio:            "Founder, Author, and Editor"
+      email:          elaboraet@gmail.com
 
-# Permalinks
-permalink:      /:year-:month-:day/:title
-paginate:       5
+    sam:
+      name:           Sam
+      site:           https://www.elaboraet.com
+      avatar:         assets/images/avatar1.jpg
+      bio:            "Contributing Author and Editor"
+      email:          elaboraet@gmail.com
+      
+    rohan:
+      name:           Rohan
+      site:           https://www.elaboraet.com
+      avatar:         assets/images/avatar2.jpg
+      bio:            "Contributing Author and Editor"
+      email:          elaboraet@gmail.com
+ 
+# Defaults
+defaults:
 
-# Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec, Templates/ ]
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: umit
+      avatar: assets/images/avatar3.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
 
-# Disqus (Set to your disqus id)
-disqus:         jekyll-tale
+# Paginate
+paginate: 10
+
+exclude:
+    - Templates/
+    - Drafts/
+
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]

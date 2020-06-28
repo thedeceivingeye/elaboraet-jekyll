@@ -1,13 +1,9 @@
 ---
-title: "About"
-permalink: "/about.html"
-comments: true
+layout: page
+title: About
+permalink: /about/
 ---
->“Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.”
 
-Jalal ad-Din Muhammad Rumi.
-
-## Our Vision
 
 Welcome to Elaboraet. We are a group of three writers who ventured to collaboratively author essays and articles about education, philosophy, cultural criticism, and otherwise. We created Elaboraet as a website dedicated to writing.
 
@@ -18,7 +14,3 @@ The Articles section contains fuller, comprehensively written, proof-read articl
 Welcome to Elaboraet, a work-in-progress website dedicated to writing.
 
 ## Our Authors
-See our [Authors index](authors-list.html).
-
-# Technical Information
-Elaboraet uses the Jekyll Static Website software hosted on Netlify. It currently uses the *Mundana* theme made by ["wowthemesnet"](https://www.wowthemes.net).
