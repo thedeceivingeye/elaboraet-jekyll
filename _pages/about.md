@@ -3,19 +3,14 @@ title: "About"
 permalink: "/about.html"
 comments: true
 ---
->“Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.”
-
-Jalal ad-Din Muhammad Rumi.
-
 ## Our Vision
+With me are two friends, and, as a joint effort, we aspire to write articles, essays, and reflections in regular cadence. We don't just write to influence other people and "get our names out there," but we write to improve ourselves and build our own skills. Having our writing published online compels us to write *as if* many read our work. The possibility of having even a single reader sparks that motivation to write well. 
 
-Welcome to Elaboraet. We are a group of three writers who ventured to collaboratively author essays and articles about education, philosophy, cultural criticism, and otherwise. We created Elaboraet as a website dedicated to writing.
+Changing others and having impact requires that we first change what exists in our own selves, as Rumi once expressed:
 
-We plan to use the homepage as a contiguous stream of complete essays, each of which may serve as a launchpad for future articles or bite-sized discussions. Each essay appears as a post with its own comments section, and will typically range from two to fifteen paragraphs, about five to twenty-five minutes reading time.
+> Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.
 
-The Articles section contains fuller, comprehensively written, proof-read articles dedicated to discussing or reporting on coherent topics. A typical article will range from four to sixty paragraphs, about seven to sixty minutes reading time.
-
-Welcome to Elaboraet, a work-in-progress website dedicated to writing.
+*Jalal ad-Din Muhammad Rumi.*
 
 ## Our Authors
 See our [Authors index](authors-list.html).
