@@ -3,7 +3,7 @@ layout: post
 title:  "Doldrums"
 author: umit
 categories: [ General Essays ]
-image: assets/images/pens.jpg
+image: assets/images/doldrums-appleby.jpg
 comments: true
 tags: [ featured]
 --- 
