@@ -4,7 +4,7 @@
 
 body {
 	overflow-x:hidden;
-	padding-top:100px;
+	padding-top:95px;
 }
 .site-content {
 	margin-top:30px;
@@ -275,6 +275,7 @@ a.text-dark:hover {
 .jumbotron {
 	background-size:cover;
 	padding:7rem 1rem;
+	background-image: linear-gradient(white,lightgray);
 }
 @media (min-width:992px) {
 	.jumbotron-lg-withnav {
