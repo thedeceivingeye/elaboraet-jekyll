@@ -138,6 +138,7 @@ strong, b {
 	display:flex;
 	justify-content:space-between;
 	margin-bottom: .5rem;
+	flex-wrap: wrap;
 }
 
 .posts li a, .posts li div, .projects li a {
