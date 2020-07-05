@@ -1,74 +1,62 @@
-# Site
-name: 'Elaboraet'
-description: 'writing, books, and reference'
-logo: 'assets/images/logo.png'
-favicon: 'favicon.png'
-baseurl: ''
-disqus: ''
-email: 'elaboraet@gmail.com'
-mailchimp-list: ''
+site: Sidey
+url: #yoururl
+title: Sidey
+description: Simple and minimalistic jekyll blogging theme.
+twitter:
+  username: #yourusername
+  card: summary
+  creator: #yourusername
+author:
+  twitter: #yourusername
+  name: #yourusername
+  avatar:
+  email: #youremail
+  url: #yoururl
+permalink: pretty
 
-include: ["_pages"]
-permalink: /:title/
+baseurl: ""
 
-# Plugins
-plugins: 
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jekyll-seo-tag
-  
-authors:
-    umit:
-      name:           Umit
-      site:           https://www.elaboraet.com
-      avatar:         assets/images/avatar3.jpg
-      bio:            "Founder, Author, and Editor"
-      email:          elaboraet@gmail.com
-
-    sam:
-      name:           Sam
-      site:           https://www.elaboraet.com
-      avatar:         assets/images/avatar1.jpg
-      bio:            "Contributing Author and Editor"
-      email:          elaboraet@gmail.com
-      
-    rohan:
-      name:           Rohan
-      site:           https://www.dawntutors.com
-      avatar:         assets/images/avatar2.jpg
-      bio:            "Contributing Author and Editor"
-      email:          elaboraet@gmail.com
- 
-# Defaults
-defaults:
-
-  # all posts
-  - scope:
-      path: "_posts"
-    values:
-      layout: post
-      author: umit
-      avatar: assets/images/avatar3.jpg
-      
-  # all pages
-  - scope:
-      path: "_pages"
-    values:
-      layout: page
-      
-# Syntax
-markdown: kramdown
-highlighter: rouge
-
-# Paginate
-paginate: 10
+highlighter: none
 
 exclude:
-    - Templates/
-    - Drafts/
+  - .jekyll-cache
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
 
+sass:
+  sass_dir:          _sass
+  style:            :compressed
 
+plugins:
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap  
 
-# Exclude metadata and development time dependencies (like Grunt plugins)
-exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

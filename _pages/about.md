@@ -1,19 +1,28 @@
 ---
-title: "About"
-permalink: "/about.html"
-comments: true
+layout: page
+title: About
 ---
-## Our Vision
-With me are two friends, and, as a joint effort, we aspire to write articles, essays, and reflections in regular cadence. We don't just write to influence other people and "get our names out there," but we write to improve ourselves and build our own skills. Having our writing published online compels us to write *as if* many read our work. The possibility of having even a single reader sparks that motivation to write well. 
 
-Changing others and having impact requires that we first change what exists in our own selves, as Rumi once expressed:
+Sidey is a simple and minimalistic jekyll blogging theme.
 
-> Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.
+### Features
 
-*Jalal ad-Din Muhammad Rumi.*
+- Responsive design
+- Inline CSS
+- Anchor headings
+- Search
+- Tags & tag pages
+- Security headers (for Netlify hosting)
+- 404 page
+- Compressed CSS and HTML
+- 100/100 score on Lighthouse, Page Speed Insights & Webpagetest
+- Robots.txt
+- Atom & Json feeds
+- Sass
+- Seo optimized (Twitter cards, Facebook Open Graph, Schema.org)
+- Ultra fast (Only ~5kb of CSS)
+- Sidebar navigation
 
-## Our Authors
-See our [Authors index](authors-list.html).
+### Screenshot
 
-# Technical Information
-Elaboraet uses the Jekyll Static Website software hosted on Netlify. It currently uses the *Mundana* theme made by ["wowthemesnet"](https://www.wowthemes.net).
+![Screenshot](screenshot.png)
