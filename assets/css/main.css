@@ -2513,7 +2513,7 @@ input[type="button"].btn-block {
   width: 100%; }
 
 .fade {
-  transition: opacity 0.15s linear; }
+  transition: opacity 0s linear; }
   @media screen and (prefers-reduced-motion: reduce) {
     .fade {
       transition: none; } }
