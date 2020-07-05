@@ -55,3 +55,6 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+
+exclude:
+  - Templates/
