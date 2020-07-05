@@ -1,17 +1,12 @@
-site: Sidey
-url: #yoururl
-title: Sidey
-description: Simple and minimalistic jekyll blogging theme.
-twitter:
-  username: #yourusername
-  card: summary
-  creator: #yourusername
+site: Elaboraet
+url: https://elaboraet.com
+title: Elaboraet
+description: writing, books, and reference.
 author:
-  twitter: #yourusername
-  name: #yourusername
+  name: Umit
   avatar:
-  email: #youremail
-  url: #yoururl
+  email: elaboraet@gmail.com
+  url: https://elaboraet.com
 permalink: pretty
 
 baseurl: ""
