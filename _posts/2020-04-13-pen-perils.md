@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Pen Perils
-description: Discussing my bad discovery-writing habit.
-summary: summary
-comments: true
-tags: [umit]
+title:  "Pen Perils"
+author: umit
+categories: [ General Essays ]
+image: assets/images/pens.jpg
+tags: [ featured]
 ---
+
 If you know me, you know that I rarely outline or draft my writing beforehand. I (sort of) know how, but I never have, simply because I never saw the use. Why plan with such depth and detail when you can let yourself throw words on a page, then later remove the bad ones? But even if some authors have success with this sort of discovery writing, I’ve begun to realize how hard improvising a “discovery-written” piece can be when writing with, for example, pen and paper. As such, I’ve concluded that my pencils and computers have spoiled me by giving me the luxury of an eraser. And that luxury, since childhood, combined with either a bad elementary English education or a bad attention span, contributed to my worse “discovery writing” habit.
 
 I’ll give you an example: when constructing any sentence, I start immediately – I tend to write down any phrases that come to my mind without much thought. This way, my plan for a sentence changes as I am writing it. But imagine this with a pen. You imagine me writing as if I had a pencil in hand, carelessly throwing phrases on paper. Then, when halfway through a particular sentence, I suddenly have a better idea for it’s structure, or even an idea for a witty remark, one that could bring the whole piece back from its gradual destination to the dustbin. But, all too soon, the pen’s ink marked its initial form permanently onto the page.
