@@ -6,7 +6,7 @@ categories: [ General Essays ]
 image: assets/images/tree.jpg
 tags: [umit, sticky]
 ---
-On July 5th, I've redesigned Elaboraet using the "Mundana" layout on Jekyll. The style appealed to me, firstly, because it has an article-gallery layout which readers can easily navigate on any recent device. And, secondly, for its speed, which stands in stark contrast with *WordPress.*
+On July 5th, I redesigned Elaboraet using the "Mundana" layout on Jekyll. The style appealed to me, firstly, because it has an article-gallery layout which readers can easily navigate on any recent device. And, secondly, for its speed, which stands in stark contrast with *WordPress.*
 
 Visiting Elaboraet, one finds a well-tiled gallery of articles. Its style doesn't repel users with ultra-minimalism, and neither does it repel them with snail-paced scripts and dynamic content. This statically-generated newspaper layout brings our writing to full relief with lightweight, helpful styling.
 
