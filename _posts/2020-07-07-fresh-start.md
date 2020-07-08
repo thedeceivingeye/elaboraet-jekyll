@@ -4,7 +4,7 @@ title: A Fresh Start
 author: umit
 categories: [ General Essays ]
 image: assets/images/tree.jpg
-tags: [umit, sticky]
+tags: [sticky]
 ---
 On July 5th, I redesigned Elaboraet using the "Mundana" layout on Jekyll. The style appealed to me, firstly, because it has an article-gallery layout which readers can easily navigate on any recent device. And, secondly, for its speed, which stands in stark contrast with *WordPress.*
 
